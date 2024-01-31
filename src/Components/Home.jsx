@@ -1,7 +1,7 @@
-const Home = () => {
+const Home = (props) => {
   return (
     <>
-      <p>Halaman Home</p>
+    <p>Hallo selamat datang di {props.name}</p>
     </>
   );
 };

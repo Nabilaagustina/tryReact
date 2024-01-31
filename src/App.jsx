@@ -5,7 +5,7 @@ import Article from "./Components/Article";
 const App = () => {
   return (
     <>
-      <Home />
+      <Home name='Nabila Agustina C. P.'/>
       <Article />
     </>
   );

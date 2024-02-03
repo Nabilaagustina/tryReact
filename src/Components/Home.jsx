@@ -1,7 +1,7 @@
 const Home = (props) => {
   return (
     <>
-    <p>Hallo selamat datang di {props.name}</p>
+      <p>Hallo selamat datang di {props.name}</p>
     </>
   );
 };

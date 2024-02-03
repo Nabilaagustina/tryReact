@@ -1,6 +1,13 @@
-const Article = () => {
-    const nama = 'Nabila Agustina';
-    return <p>Article milik {nama}</p>;
-}
+const Article = (props) => {
+  return (
+    <>
+      <h4>{props.title}</h4>
+      <em>{props.date}</em>
+      <div>
+        <small>{props.tags.join(", ")}</small>
+      </div>
+    </>
+  );
+};
 
 export default Article;

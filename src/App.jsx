@@ -1,14 +1,18 @@
 import React from "react";
-import Home from "./Components/Home";
-import Article from "./Components/Article";
-import DataJSON from "./pages";
+import { GlobalContext } from "./context";
+import router from "./routers";
+import { RouterProvider } from "react-router-dom";
 
 const App = () => {
+  const user = {
+    username: "Nabila",
+  };
+
   return (
     <>
-      {/* <Home name="Nabila Agustina C. P." /> */}
-      {/* <Article /> */}
-      <DataJSON />
+      <GlobalContext.Provider value={user}>
+        <RouterProvider router={router} />
+      </GlobalContext.Provider>
     </>
   );
 };

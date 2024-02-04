@@ -26,7 +26,7 @@ const Search = (props) => {
       />
       <button onClick={onSearchChange}>Cari</button>
       {search && (
-        <p>Pencarian data anda adalah {search} terdapat data sebanyak 0</p>
+        <p>Pencarian data Anda adalah {search} terdapat data sebanyak {props.totalPosts}</p>
       )}
     </>
   );

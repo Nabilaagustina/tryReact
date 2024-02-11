@@ -1,7 +1,7 @@
 import dataJSON from "../Datas/dataJSON.json";
 import Article from "../Components/Article";
 import Search from "../Components/Search";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const DataJSON = () => {
   const [posts, setPosts] = useState(dataJSON);
